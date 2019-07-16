@@ -12,12 +12,14 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System.Data;
 using Flowershop.Repositories;
+using MySql.Data.MySqlClient;
 
 
 namespace Flowershop
 {
   public class Startup
   {
+    private readonly string _connectionString = "";
     public Startup(IConfiguration configuration)
     {
       Configuration = configuration;
