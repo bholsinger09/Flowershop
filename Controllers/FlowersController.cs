@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Flowershop.Repositories;
 
 namespace Flowershop.Controllers
 {
@@ -10,6 +11,15 @@ namespace Flowershop.Controllers
   [ApiController]
   public class FlowerController : ControllerBase
   {
+
+    private readonly FlowerRepository _flr; //provides refrence to repository (service)
+
+
+    public FlowerController(FlowerRepository flr)
+    {
+      _flr = flr;
+    }
+
     // GET api/values
     [HttpGet]
     public ActionResult<IEnumerable<string>> Get()
