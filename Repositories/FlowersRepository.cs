@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using burgershack.Models;
+using Flowershop.Models;
 using Dapper;
 
 namespace Flowershop.Repositories

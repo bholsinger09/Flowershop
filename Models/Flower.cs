@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace burgershack.Models
+namespace Flowershop.Models
 {
   public class Flower
   {
